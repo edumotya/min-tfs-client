@@ -25,6 +25,7 @@ NP_TO_TF_MAPPING = {
     np.complex64: TFType(TFDType="DT_COMPLEX64", TensorProtoField="scomplex_val"),
     np.complex128: TFType(TFDType="DT_COMPLEX128", TensorProtoField="dcomplex_val"),
     np.str_: TFType(TFDType="DT_STRING", TensorProtoField="string_val"),
+    np.bytes_: TFType(TFDType="DT_STRING", TensorProtoField="string_val"),
     np.bool_: TFType(TFDType="DT_BOOL", TensorProtoField="bool_val"),
 }
 
